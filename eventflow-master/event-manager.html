@@ -869,7 +869,7 @@ textarea { resize: vertical; min-height: 72px; }
   <div class="header-inner">
     <div class="logo">
       <div class="logo-icon"><img src="logo.png" alt="H2O Events Logo"></div>
-      <span class="logo-text">H2O <span>Events</span></span>
+      <span class="logo-text">H<span>2</span>O Events</span>
     </div>
     <div class="header-controls">
       <div class="counter-badge" style="display:none;">
@@ -880,7 +880,7 @@ textarea { resize: vertical; min-height: 72px; }
       <a class="header-link" href="wiki.html" title="Wiki Support">📚 Wiki</a>
       <span class="theme-label" id="themeLabel">☀️</span>
       <button class="theme-toggle" id="themeToggle" title="Schimbă tema" aria-label="Toggle theme"></button>
-      <span class="auth-status" id="authStatus">Public</span>
+      <span class="auth-status" id="authStatus">Private</span>
       <button id="userBtn" class="user-btn" title="Cont" aria-label="Cont">👤</button>
     </div>
   </div>
@@ -1856,7 +1856,7 @@ function refreshAccessUI() {
 
   if (formPanel) formPanel.style.display = admin ? 'block' : 'none';
   if (publicNotice) publicNotice.style.display = admin ? 'none' : 'block';
-  if (authStatus) authStatus.textContent = admin ? 'Admin' : (loggedIn ? 'Utilizator' : 'Public');
+  if (authStatus) authStatus.textContent = admin ? 'Admin' : (loggedIn ? 'Utilizator' : 'Private');
   if (userBtn) userBtn.textContent = admin ? '🛡️' : '👤';
 }
 
